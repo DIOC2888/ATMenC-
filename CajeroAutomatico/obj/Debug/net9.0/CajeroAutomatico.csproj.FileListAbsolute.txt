@@ -1,0 +1,14 @@
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\bin\Debug\net9.0\CajeroAutomatico.exe
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\bin\Debug\net9.0\CajeroAutomatico.deps.json
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\bin\Debug\net9.0\CajeroAutomatico.runtimeconfig.json
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\bin\Debug\net9.0\CajeroAutomatico.dll
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\bin\Debug\net9.0\CajeroAutomatico.pdb
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\CajeroAutomatico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\CajeroAutomatico.AssemblyInfoInputs.cache
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\CajeroAutomatico.AssemblyInfo.cs
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\CajeroAutomatico.csproj.CoreCompileInputs.cache
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\CajeroAutomatico.dll
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\refint\CajeroAutomatico.dll
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\CajeroAutomatico.pdb
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\CajeroAutomatico.genruntimeconfig.cache
+C:\Users\denis\OneDrive\Documents\GitHub\Guia8\ATMenC-\CajeroAutomatico\obj\Debug\net9.0\ref\CajeroAutomatico.dll
