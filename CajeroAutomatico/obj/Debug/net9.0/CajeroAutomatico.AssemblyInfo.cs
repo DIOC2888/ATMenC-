@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CajeroAutomatico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db159928b1c008e0f2eec134815ddb6f6104e9bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("CajeroAutomatico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CajeroAutomatico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
