@@ -25,7 +25,7 @@ namespace CajeroAutomatico
         static double deposito(double saldo, double monto)
         {
             saldo += monto;
-            Console.WriteLine($"Su nuevo saldo es: C${saldo}");
+            Console.WriteLine($"Su nuevo saldo es: C${saldo}\n");
             return saldo;
         }
         // Función para manejar retiros
@@ -34,7 +34,7 @@ namespace CajeroAutomatico
         {
             if (monto > saldo)
             {
-                Console.WriteLine("Fondos insuficientes.");
+                Console.WriteLine("Fondos insuficientes.\n");
             }
             else
             {
@@ -48,63 +48,68 @@ namespace CajeroAutomatico
             int opc;
             double saldo = 0;
             // Manejo de excepciones para entradas no válidas
-           
-                // Bucle del cajero automático
-                //Subproblema #4: Generar un bucle para que el usuario pueda hacer la cantidad necesaria de procedimientos
-                do
+
+            // Bucle del cajero automático
+            //Subproblema #4: Generar un bucle para que el usuario pueda hacer la cantidad necesaria de procedimientos
+            do
+            {
+                MostrarMenu();
+                opc = Convert.ToInt32(Console.ReadLine());
+                //Se abre switch en el que se llamaran las funciones en base a la opcion seleccionada
+                switch (opc)
                 {
-                    MostrarMenu();
-                    opc = Convert.ToInt32(Console.ReadLine());
-                
-                    switch (opc)
-                    {
-                        case 1:
-                            Console.WriteLine("--------------------------");
-                            Console.WriteLine($"Su saldo actual es: C${saldo}");
-                            break;
-                        case 2:
-                            try
-                            {
-                                Console.WriteLine("--------------------------");
-                                Console.Write("Ingrese el monto a depositar: C$");
-                                double montoDeposito = Convert.ToDouble(Console.ReadLine());
-                                saldo = deposito(saldo, montoDeposito);
+                    //Se muestra el saldo actual
+                    case 1:
+                        Console.WriteLine("\n--------------------------");
+                        Console.WriteLine($"Su saldo actual es: C${saldo}");
+                        break;
+                    case 2:
+                    //Se llama a la funcion deposito
+                        try
+                        {
+                            Console.WriteLine("\n--------------------------");
+                            Console.Write("Ingrese el monto a depositar: C$");
+                            double montoDeposito = Convert.ToDouble(Console.ReadLine());
+                            saldo = deposito(saldo, montoDeposito);
 
-                            }
-                            catch (FormatException ex)
-                            {
-                                Console.WriteLine("Error: Entrada no válida. Por favor, ingrese un número." + ex.Message);
-                            }
-                        break;
-                        case 3:
-                            try
-                            {
-                                Console.WriteLine("--------------------------");
-                                Console.Write("Ingrese el monto a retirar: C$");
-                                double montoRetiro = Convert.ToDouble(Console.ReadLine());
-                                saldo = retiro(saldo, montoRetiro);
-                            }   
-                            catch (FormatException ex)
-                            {
-                                Console.WriteLine("Error: Entrada no válida. Por favor, ingrese un número." + ex.Message);
-                            }
-                            break;
-                        case 0:
-                            Console.WriteLine("Operaciones completadas. Saliendo...");
-                            opc = 0;
-                            Console.WriteLine("\nPresiona ENTER para terminar el programa...");
-                            Console.ReadLine();
-                        break;
-                        default:
-                            Console.WriteLine("--------------------------");
-                            Console.WriteLine("Opción no válida.");
-                            break;
                         }
-                    
-                }while(opc != 0);
+                        catch (FormatException ex)
+                        {
+                            //Se valida que el usuario ingrese un numero.
+                            Console.WriteLine("Error: Entrada no válida. Por favor, ingrese un número." + ex.Message);
+                            Console.WriteLine("--------------------------\n\n\n");
+                        }
+                        break;
+                    case 3:
+                        try
+                        {
+                            Console.WriteLine("\n--------------------------");
+                            Console.Write("Ingrese el monto a retirar: C$");
+                            double montoRetiro = Convert.ToDouble(Console.ReadLine());
+                            saldo = retiro(saldo, montoRetiro);
+                        }
+                        catch (FormatException ex)
+                        {
+                            Console.WriteLine("Error: Entrada no válida. Por favor, ingrese un número." + ex.Message + "\n");
+                        }
+                        break;
+                    case 0:
+                        Console.WriteLine("Operaciones completadas. Saliendo...");
+                        opc = 0;
+                        Console.WriteLine("\nPresiona ENTER para terminar el programa...");
+                        Console.ReadLine();
+                        break;
+                    default:
+                        Console.WriteLine("--------------------------");
+                        Console.WriteLine("Opción no válida.");
+                        break;
+                }
+
+            } while (opc != 0);
 
 
-           
+
         }
     }
 }
+
